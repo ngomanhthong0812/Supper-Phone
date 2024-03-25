@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wdth,wght@6..12,75..125,200..1000&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -14,4 +15,8 @@ body {
   font-family: Nunito;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.container_body {
+  max-width: 1259px;
 }
