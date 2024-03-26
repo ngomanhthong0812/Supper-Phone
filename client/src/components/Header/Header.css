@@ -1,0 +1,76 @@
+.count_cart {
+    position: absolute;
+    top: -5px;
+    left: 16px;
+    background-color: rgb(169, 0, 0);
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+.nav_children-1 {
+    top: 46px !important;
+    left: -200px !important;
+}
+
+.nav_children-1,
+.nav_children {
+    position: absolute;
+    top: 48px;
+    left: -90px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    visibility: hidden;
+    z-index: 10;
+    box-shadow: 0 0 2px rgb(197, 197, 197)
+}
+
+.cart::before {
+    position: absolute;
+    content: "";
+    top: 40px;
+    right: 25px;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    visibility: hidden;
+}
+
+.account::before {
+    position: absolute;
+    content: "";
+    top: 42px;
+    right: 0px;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    visibility: hidden;
+}
+
+.cart::after,
+.account::after {
+    position: absolute;
+    content: "";
+    bottom: -50px;
+    right: 0px;
+    width: 100%;
+    height: 50px;
+}
+
+.account:hover .nav_children,
+.account:hover:before {
+    visibility: inherit;
+}
+
+.cart:hover .nav_children-1,
+.cart:hover:before {
+    visibility: inherit;
+}
