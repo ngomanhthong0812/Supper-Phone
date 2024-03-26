@@ -20,3 +20,8 @@ body {
 .container_body {
   max-width: 1259px;
 }
+.gravity{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
