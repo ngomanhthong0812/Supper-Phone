@@ -1,0 +1,73 @@
+.active_menu_item,
+.menu_item {
+    position: relative;
+}
+
+.menu_item::before {
+    position: absolute;
+    content: "";
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 2.4px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu_item:hover:before {
+    width: 28px;
+}
+
+.active_menu_item::before {
+    position: absolute;
+    content: "";
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28px;
+    height: 2.4px;
+    background-color: white;
+}
+
+
+
+.subMenu {
+    visibility: hidden;
+    transition: 0.3s ease;
+    opacity: 0;
+    box-shadow: 0 0 1px rgb(54, 54, 54);
+}
+
+.subMenuChildren {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 0 1px rgb(197, 197, 197);
+}
+
+.container_menu-children {
+    position: relative;
+}
+
+.container_menu-children>.subMenuChildren {
+    position: absolute;
+    right: -251px;
+    top: 0;
+}
+
+.container_menu-children:hover .subMenuChildren {
+    visibility: inherit;
+    opacity: 1;
+}
+
+.subMenuChildren>li,
+.subMenu>li:not(.subMenu_iphone) {
+    box-shadow: 0px 0.4px 1px rgb(197, 197, 197);
+}
+
+.container_menu:hover .subMenu {
+    visibility: inherit;
+    top: 41.5px;
+    opacity: 1;
+}
