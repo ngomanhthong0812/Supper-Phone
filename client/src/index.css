@@ -19,8 +19,10 @@ body {
 
 .container_body {
   max-width: 1259px;
+  margin: 0px auto;
 }
-.gravity{
+
+.gravity {
   display: flex;
   align-items: center;
   justify-content: center;

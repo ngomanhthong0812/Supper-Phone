@@ -37,6 +37,7 @@
     transition: 0.3s ease;
     opacity: 0;
     box-shadow: 0 0 1px rgb(54, 54, 54);
+    z-index: 10;
 }
 
 .subMenuChildren {
@@ -48,6 +49,7 @@
 
 .container_menu-children {
     position: relative;
+    z-index: 10;
 }
 
 .container_menu-children>.subMenuChildren {
