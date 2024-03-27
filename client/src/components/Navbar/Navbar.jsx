@@ -27,7 +27,7 @@ export default function Navbar() {
             <li key={item.id} className="relative container_menu ">
               <Link
                 className={`gravity gap-[3px] px-[16px] py-[8px] cursor-pointer ${
-                  location.pathname == item.link
+                  location.pathname === item.link
                     ? "active_menu_item"
                     : "menu_item"
                 } `}
@@ -79,7 +79,7 @@ export default function Navbar() {
                         </li>
                         <ul>
                           {item.subMenu.map((item) => (
-                            <li className="flex justify-start">
+                            <li className="flex justify-start" key={item.id}>
                               <Link
                                 to={item.link}
                                 className="gravity px-5 py-[2px] cursor-pointer text-[#333333] hover:underline transition duration-100"

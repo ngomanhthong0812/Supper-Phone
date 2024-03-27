@@ -8,7 +8,7 @@ export default function ProductsList() {
       <div className="w-full flex items-center justify-center">
         <div className="container_body grid grid-cols-4 gap-[20px]">
           {ProductsItem.map((item) => (
-            <ProductCard {...item} />
+            <ProductCard {...item} key={item.id}/>
           ))}
         </div>
       </div>
