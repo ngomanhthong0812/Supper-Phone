@@ -23,10 +23,10 @@ export default function Footer() {
 
           <div className="pt-5 pb-8">
             <div className="max-w-[650px] w-full grid grid-flow-row m-auto ">
-              <h1 className='font-bold text-[26px]'>Đăng ký nhận tin từ Sudes Phone</h1>
+              <h1 className='font-bold text-[26px]'>Đăng ký nhận tin từ Supper Phone</h1>
               <span className='text-base font-medium text-[#585858]'>Nhận thông tin sản phẩm mới nhất và các chương trình khuyến mãi.</span>
               <form action="" className='relative mt-5'>
-                <input type="text" placeholder="Nhập địa chỉ email" className='w-full border border-[#141414] rounded-full py-2 px-[30px] text-sm focus:outline-none'/>
+                <input type="text" placeholder="Nhập địa chỉ email" className='font-semibold w-full border border-[#141414] rounded-full py-2 px-[30px] text-sm focus:outline-none'/>
                 <button className='absolute top-0 right-0 bg-black text-white px-6 h-[37px] rounded-full'>Đăng ký</button>
               </form>
             </div>
@@ -52,7 +52,7 @@ export default function Footer() {
 
                 <div className="col-span-2 text-[15px]">
                   <ul>
-                    <li className='mb-[15px] '>{ListChinhSach.tile}</li>
+                    <li className='mb-[15px] font-semibold '>{ListChinhSach.tile}</li>
                     {/* <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Chính sách mua hàng</li>
                     <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Chính sách đổi trả</li>
                     <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Chính sách vận chuyển</li>
@@ -72,7 +72,7 @@ export default function Footer() {
                       <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Hướng dẫn chuyển khoản</li>
                       <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Hướng dẫn trả góp</li>
                       <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Hướng dẫn hoàn hàng</li> */}
-                     <li className='mb-[15px] '>{ListHuongDan.tile}</li>
+                     <li className='mb-[15px] font-semibold'>{ListHuongDan.tile}</li>
                      {ListHuongDan.conten.map(item => 
                        <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a>{item}</li>
                       )}
@@ -80,7 +80,7 @@ export default function Footer() {
                 </div>
 
                 <div className="col-span-4">
-                  <h4 className='mb-[15px]'>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                  <h4 className='mb-[15px] font-semibold'>KẾT NỐI VỚI CHÚNG TÔI</h4>
                   <div className="flex gap-3 mb-5">
                     <a href=""><img src={facebook_2} alt="facebook"  /></a>
                     <a href=""><img src={instagram_1} alt="instagram" /></a>
@@ -110,7 +110,7 @@ export default function Footer() {
           </div>
     {/*  */}
           <div className="p-2">
-          © Bản quyền thuộc về Sudes Team | Cung cấp bởi Sapo
+          © Bản quyền thuộc về <b>Supper Team</b> | Cung cấp bởi <b>Supper</b>
           </div>
           </div>
         </footer>

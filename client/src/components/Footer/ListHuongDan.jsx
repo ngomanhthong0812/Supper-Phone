@@ -1,7 +1,7 @@
 import React from 'react'
 const  ListHuongDan= {
    
-    tile : 'Hướng DẪN',
+    tile : 'HƯỚNG DẪN',
     conten: [
         'Hướng dẫn đổi trả',
         'Hướng dẫn mua hàng',
