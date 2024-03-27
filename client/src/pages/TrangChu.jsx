@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import Banner from "../components/Banner/Banner";
 import ProductsList from "../components/ProductsList/ProductsList";
+import Customers from "../components/Customers/Customers";
 export default function Home() {
   return (
     <div>
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <Banner />
       <ProductsList />
+      <Customers/>
       <Footer />
     </div>
   );
