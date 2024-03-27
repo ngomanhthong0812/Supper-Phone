@@ -33,10 +33,10 @@ export default function Footer() {
           </div>
     {/*  */}
           <div className="bg-black pt-[30px] pb-[20px] text-white">
-            <div className="container_body m-auto px-9">
-              <div className="grid grid-cols-12 grid-rows-1 gap-4  text-start">
+            <div className="container_body m-auto ">
+              <div className="grid grid-cols-12 grid-rows-1  text-start">
 
-                <div className="col-span-4">
+                <div className="col-span-4 pr-6">
                   <div className="mb-[15px]">
                     <a href="#" className='text-white'><img src={logo} alt="" width={249} height={29} /></a>
                   </div>
@@ -44,9 +44,9 @@ export default function Footer() {
                   Hệ thống cửa hàng Sudes Phone chuyên bán lẻ điện thoại, máy tính laptop, smartwatch, smarthome, phụ kiện chính hãng - Giá tốt, giao miễn phí.
                   </div>
                   <div className=" text-base">
-                      <div className="">Địa chỉ:70 Lữ Gia, Phường 15, Quận 11, Tp.HCM</div>
-                      <div className="">Số điện thoại: <span className='hover:text-[#bf1e2e] cursor-pointer'>1900 6750</span></div>
-                      <div className="">Email: <span className='hover:text-[#bf1e2e] cursor-pointer'>support@sapo.vn</span></div>
+                      <div className="py-1">Địa chỉ:70 Lữ Gia, Phường 15, Quận 11, Tp.HCM</div>
+                      <div className="py-1">Số điện thoại: <span className='hover:text-[#bf1e2e] cursor-pointer'>1900 6750</span></div>
+                      <div className="py-1">Email: <span className='hover:text-[#bf1e2e] cursor-pointer'>support@sapo.vn</span></div>
                   </div>
                 </div>
 
@@ -88,17 +88,20 @@ export default function Footer() {
                     <a href=""><img src={lazada} alt="laptop" /></a>
                     <a href=""><img src={tiktok} alt="tiktok" /></a>
                   </div>
-                  <div className="col-span-4">
+                  <div className="col-span-4 ">
                     <h4 className='mb-[15px]'>HỖ TRỢ THANH TOÁN</h4>
-                    <div className="grid grid-cols-5  gap-x-2 gap-y-2">
+                    <div className="flex gap-2">
                     <div className='w-16' ><img src={payment_1} alt="payment_1"  /></div>
                     <div className='w-16' ><img src={payment_2} alt="payment_2"  /></div>
                     <div className='w-16' ><img src={payment_3} alt="payment_3"  /></div>
                     <div className='w-16' ><img src={payment_4} alt="payment_4"  /></div>
                     <div className='w-16' ><img src={payment_5} alt="payment_5"  /></div>
-                    <div className='w-16' ><img src={payment_6} alt="payment_6"  /></div>
-                    <div className='w-16' ><img src={payment_7} alt="payment_7"  /></div>
+                   
                     
+                  </div>
+                  <div className="flex gap-2 mt-2">
+                  <div className='w-16' ><img src={payment_6} alt="payment_6"  /></div>
+                    <div className='w-16' ><img src={payment_7} alt="payment_7"  /></div>
                   </div>
                   </div>
                 </div>
