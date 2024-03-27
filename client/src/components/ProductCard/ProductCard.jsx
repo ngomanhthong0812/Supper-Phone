@@ -87,19 +87,19 @@ export default function ProductCard({
       </div>
       <div className="btn-action absolute flex flex-col gap-y-2 right-[12px] top-1/4 text-2xl">
         <button
-          className="translate-x-11 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition duration-200
+          className="translate-x-3 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition duration-200
                     w-[36px] h-[36px] flex items-center justify-center bg-white hover:bg-black hover:text-white rounded-full border "
         >
           <IoEyeOutline className="text-[20px]" />
         </button>
         <button
-          className="translate-x-11 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition duration-300
+          className="translate-x-3 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition duration-300
                     w-[36px] h-[36px] flex items-center justify-center bg-white hover:bg-black hover:text-white rounded-full border"
         >
           <CiHeart className="text-[20px]" />
         </button>
         <button
-          className="translate-x-11 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition duration-500
+          className="translate-x-3 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition duration-500
                     w-[36px] h-[36px] flex items-center justify-center bg-white hover:bg-black hover:text-white rounded-full border"
         >
           <IoIosGitCompare className="text-[20px]" />
