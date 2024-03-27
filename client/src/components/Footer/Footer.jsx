@@ -19,9 +19,9 @@ export default function Footer() {
   return (
     <div>
         <footer>
-          <div className="bg-[#f5f5f5] leading-relaxed">
+          <div className="bg-[#f5f5f5] leading-relaxed shadow  mt-10">
 
-          <div className="pt-5 pb-8">
+          <div className="pt-5 pb-8 max-lg:px-5">
             <div className="max-w-[650px] w-full grid grid-flow-row m-auto ">
               <h1 className='font-bold text-[26px]'>Đăng ký nhận tin từ Supper Phone</h1>
               <span className='text-base font-medium text-[#585858]'>Nhận thông tin sản phẩm mới nhất và các chương trình khuyến mãi.</span>
@@ -33,24 +33,25 @@ export default function Footer() {
           </div>
     {/*  */}
           <div className="bg-black pt-[30px] pb-[20px] text-white">
-            <div className="container_body m-auto ">
+            <div className="container_body m-auto max-lg:px-5">
               <div className="grid grid-cols-12 grid-rows-1  text-start">
 
-                <div className="col-span-4 pr-6">
+                <div className="col-span-4 pr-6  max-[991px]:col-span-12">
                   <div className="mb-[15px]">
                     <a href="#" className='text-white'><img src={logo} alt="" width={249} height={29} /></a>
                   </div>
-                  <div className="mb-[10px] text-base">
-                  Hệ thống cửa hàng Sudes Phone chuyên bán lẻ điện thoại, máy tính laptop, smartwatch, smarthome, phụ kiện chính hãng - Giá tốt, giao miễn phí.
+                  <div className="mb-[10px] text-base leading-7">
+                  Hệ thống cửa hàng Sudes Phone chuyên bán lẻ điện thoại, máy tính laptop, smartwatch, 
+                  smarthome, phụ kiện chính hãng - Giá tốt, giao miễn phí.
                   </div>
-                  <div className=" text-base">
+                  <div className=" text-base ">
                       <div className="py-1">Địa chỉ:70 Lữ Gia, Phường 15, Quận 11, Tp.HCM</div>
                       <div className="py-1">Số điện thoại: <span className='hover:text-[#bf1e2e] cursor-pointer'>1900 6750</span></div>
                       <div className="py-1">Email: <span className='hover:text-[#bf1e2e] cursor-pointer'>support@sapo.vn</span></div>
                   </div>
                 </div>
 
-                <div className="col-span-2 text-[15px]">
+                <div className="col-span-2 text-[15px]  max-[991px]:col-span-4 max-[991px]:mt-5 max-[768px]:col-span-12">
                   <ul>
                     <li className='mb-[15px] font-semibold '>{ListChinhSach.tile}</li>
                     {/* <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Chính sách mua hàng</li>
@@ -59,12 +60,12 @@ export default function Footer() {
                     <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Chính sách bảo mật</li>
                     <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Cam kết cửa hàng</li> */}
                     {ListChinhSach.conten.map(item => 
-                       <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a>{item}</li>
+                       <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal max-md:hidden'><a href="#"></a>{item}</li>
                       )}
                   </ul>
                 </div>
 
-                <div className="col-span-2 text-[15px]">
+                <div className="col-span-2 text-[15px]  max-[991px]:col-span-4 max-[991px]:mt-5 max-[768px]:col-span-12">
                   <ul>
                       {/* <li className='mb-[15px]'>HƯỚNG DẪN</li>
                       <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Hướng dẫn mua hàng</li>
@@ -74,12 +75,12 @@ export default function Footer() {
                       <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Hướng dẫn hoàn hàng</li> */}
                      <li className='mb-[15px] font-semibold'>{ListHuongDan.tile}</li>
                      {ListHuongDan.conten.map(item => 
-                       <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a>{item}</li>
+                       <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal max-md:hidden'><a href="#"></a>{item}</li>
                       )}
                     </ul>
                 </div>
 
-                <div className="col-span-4">
+                <div className="col-span-4  max-[991px]:col-span-4 max-[991px]:mt-5 max-[768px]:col-span-12">
                   <h4 className='mb-[15px] font-semibold'>KẾT NỐI VỚI CHÚNG TÔI</h4>
                   <div className="flex gap-3 mb-5">
                     <a href=""><img src={facebook_2} alt="facebook"  /></a>
@@ -89,27 +90,25 @@ export default function Footer() {
                     <a href=""><img src={tiktok} alt="tiktok" /></a>
                   </div>
                   <div className="col-span-4 ">
-                    <h4 className='mb-[15px]'>HỖ TRỢ THANH TOÁN</h4>
-                    <div className="flex gap-2">
+                    <h4 className='mb-[15px] font-semibold'>HỖ TRỢ THANH TOÁN</h4>
+                    <div className="flex gap-2 flex-wrap">
                     <div className='w-16' ><img src={payment_1} alt="payment_1"  /></div>
                     <div className='w-16' ><img src={payment_2} alt="payment_2"  /></div>
                     <div className='w-16' ><img src={payment_3} alt="payment_3"  /></div>
                     <div className='w-16' ><img src={payment_4} alt="payment_4"  /></div>
                     <div className='w-16' ><img src={payment_5} alt="payment_5"  /></div>
-                   
+                    <div className='w-16' ><img src={payment_6} alt="payment_6"  /></div>
+                    <div className='w-16' ><img src={payment_7} alt="payment_7"  /></div>
                     
                   </div>
-                  <div className="flex gap-2 mt-2">
-                  <div className='w-16' ><img src={payment_6} alt="payment_6"  /></div>
-                    <div className='w-16' ><img src={payment_7} alt="payment_7"  /></div>
-                  </div>
+                 
                   </div>
                 </div>
               </div>
             </div>
           </div>
     {/*  */}
-          <div className="p-2">
+          <div className="p-2 flex-wrap">
           © Bản quyền thuộc về <b>Supper Team</b> | Cung cấp bởi <b>Supper</b>
           </div>
           </div>

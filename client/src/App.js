@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
@@ -13,6 +14,7 @@ import PhuKien from './pages/PhuKien';
 import ChinhSach from './pages/ChinhSach';
 import TinTuc from './pages/TinTuc';
 import LienHe from './pages/LienHe';
+
 
 
 function App() {
