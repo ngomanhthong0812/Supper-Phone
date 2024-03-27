@@ -1,11 +1,10 @@
-import React from 'react'
-import ProductCard from './ProductCard';
-import Img1 from '../../asset/images/products/product-1.jpg';
-import Img2 from '../../asset/images/products/product-2.jpg';
-import Img3 from '../../asset/images/products/product-3.jpg';
-import Img4 from '../../asset/images/products/product-4.jpg';
+import React from "react";
+import Img1 from "../../asset/images/products/product-1.jpg";
+import Img2 from "../../asset/images/products/product-2.jpg";
+import Img3 from "../../asset/images/products/product-3.jpg";
+import Img4 from "../../asset/images/products/product-4.jpg";
 
-const ProductIphone = [
+const ProductsItem = [
   {
     id: 1,
     img: Img1,
@@ -16,7 +15,9 @@ const ProductIphone = [
     guarantee: "BH 12 tháng",
     sale: "41%",
     aosDelay: "0",
+    quantity: 400,
     quantity_sold: 131,
+    
   },
   {
     id: 2,
@@ -28,7 +29,9 @@ const ProductIphone = [
     guarantee: "BH 24 tháng",
     sale: "19%",
     aosDelay: "0",
+    quantity: 400,
     quantity_sold: 253,
+    
   },
   {
     id: 3,
@@ -40,7 +43,9 @@ const ProductIphone = [
     guarantee: "BH 24 tháng",
     sale: "23%",
     aosDelay: "0",
+    quantity: 400,
     quantity_sold: 196,
+    
   },
   {
     id: 4,
@@ -52,14 +57,10 @@ const ProductIphone = [
     guarantee: "BH 24 tháng",
     sale: "19%",
     aosDelay: "0",
+    quantity: 400,
     quantity_sold: 68,
+    
   },
 ];
 
-export default function Products() {
-  return (
-    <div>
-      <ProductCard data={ProductIphone}></ProductCard>
-    </div>
-  )
-}
+export default ProductsItem;
