@@ -16,6 +16,7 @@ export default function ProductCard({
   quantity_sold,
   installment,
   guarantee,
+  endow,
 }) {
   const widthQuantitySold = (quantity_sold / quantity) * 100;
   const style = {
@@ -74,9 +75,7 @@ export default function ProductCard({
       </div>
 
       <div className="bg-[#f1f1f1] py-[3px] px-[5px] mt-2 rounded-md">
-        <span className="text-sm text-[#333333]">
-          Giảm trực tiếp 40%, tối đa 600.000 VND khi mở thẻ TP Bank EVO
-        </span>
+        <span className="text-sm text-[#333333]">{endow}</span>
       </div>
 
       <div className="quantity-sold w-full text-center mt-3 bg-[#ffcfb4] rounded-full relative z-10">

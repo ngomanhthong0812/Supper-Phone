@@ -17,7 +17,7 @@ const ProductsItem = [
     aosDelay: "0",
     quantity: 400,
     quantity_sold: 131,
-    
+    endow: "Giảm trực tiếp 40%, tối đa 600.000 VND khi mở thẻ TP Bank EVO",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const ProductsItem = [
     aosDelay: "0",
     quantity: 400,
     quantity_sold: 253,
-    
+    endow: "Giảm trực tiếp 40%, tối đa 600.000 VND khi mở thẻ TP Bank EVO",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const ProductsItem = [
     aosDelay: "0",
     quantity: 400,
     quantity_sold: 196,
-    
+    endow: "Giảm trực tiếp 40%, tối đa 600.000 VND khi mở thẻ TP Bank EVO",
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const ProductsItem = [
     aosDelay: "0",
     quantity: 400,
     quantity_sold: 68,
-    
+    endow: "Giảm trực tiếp 40%, tối đa 600.000 VND khi mở thẻ TP Bank EVO",
   },
 ];
 
