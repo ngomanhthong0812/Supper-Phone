@@ -29,7 +29,7 @@ export default function Header() {
           <div className='gravity gap-2 cursor-pointer max-md:hidden'><FiPhoneCall className='text-[28px]' /><span className='flex flex-col items-start text-[12px] leading-[16px]'>Gọi mua hàng <div className='text-[14px]'>1900 2318</div></span></div>
           <div className='relative account'>
             <div className='gravity gap-2 cursor-pointer'><FaUser className='text-[28px]' /><span className='flex flex-col items-start text-[12px] leading-[16px]'><span className='max-md:hidden'>Thông tin</span> <div className='text-[14px] gravity '><span className='max-md:hidden'>Tài khoản</span> <IoIosArrowDown /></div></span></div>
-            <span className='nav_children w-[210px] flex flex-col items-start gap-1'>
+            <span className='nav_children w-[230px] flex flex-col items-start gap-1'>
               <div className='gravity gap-1 w-[100%] px-2 py-1 transition duration-500 rounded-[4px] !justify-start hover:bg-black hover:text-white cursor-pointer'><IoIosLogIn className='text-[20px]' />Đăng nhập</div>
               <div className='gravity gap-1 w-[100%] px-2 py-1 transition duration-500 rounded-[4px] !justify-start hover:bg-black hover:text-white cursor-pointer'><PiUserPlusLight className='text-[20px]' />Đăng ký</div>
               <div className='gravity gap-1 w-[100%] px-2 py-1 transition duration-500 rounded-[4px] !justify-start hover:bg-black hover:text-white cursor-pointer'><CiHeart className='text-[20px]' />Danh sách yêu thích (0)</div>
@@ -43,7 +43,7 @@ export default function Header() {
               <span>Không có sản phẩm nào trong giỏ hàng</span>
             </span>
           </div>
-          <div className="reponsive_menu hidden max-md:flex"><AiOutlineMenu className='text-[28px]'/></div>
+          <div className="reponsive_menu hidden max-md:flex"><AiOutlineMenu className='text-[28px]' /></div>
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@ export default function Navbar() {
                 <ul className='flex text-[17px] gap-[4px]'>
                     {NavbarItem.map((item) => (
                         <li key={item.id} className='relative container_menu '>
-                            <Link className={`gravity gap-[3px] px-[18px] py-[8px] cursor-pointer ${location.pathname == item.link ? 'active_menu_item' : 'menu_item'} `} to={item.link}>{item.title}{item.subMenu && <IoIosArrowDown />}</Link>
+                            <Link className={`gravity gap-[3px] px-[16px] py-[8px] cursor-pointer ${location.pathname == item.link ? 'active_menu_item' : 'menu_item'} `} to={item.link}>{item.title}{item.subMenu && <IoIosArrowDown />}</Link>
                             {
                                 item.subMenu && (
                                     item.title !== 'iPhone' ? (<ul className='absolute subMenu bg-white text-black w-[250px] top-[50px]'>
