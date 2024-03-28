@@ -15,7 +15,7 @@ import BlockSale from "../components/BlockSale/BlockSale";
 import Post from "../components/Post/Post";
 
 
-export default function Home() {
+export default function TrangChu() {
   return (
     <div>
       <Header />
