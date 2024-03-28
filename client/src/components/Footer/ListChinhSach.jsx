@@ -1,7 +1,7 @@
 import React from 'react'
  const  ListChinhSach= {
-    tile : 'CHÍNH SÁCH',
-    conten: [
+    title : 'CHÍNH SÁCH',
+    content: [
         'Chính sách mua hàng',
         'Chính sách đổi trả',
         'Chính sách vận chuyển',

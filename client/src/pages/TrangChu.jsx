@@ -7,10 +7,13 @@ import Footer from "../components/Footer/Footer";
 import Banner from "../components/Banner/Banner";
 import ProductsList from "../components/ProductsList/ProductsList";
 import Customers from "../components/Customers/Customers";
-import Post from "../components/Post/Post"
+
 import Services from "../components/Services/Services";
 import SubBanner from "../components/SubBanner/SubBanner";
 import BlockSale from "../components/BlockSale/BlockSale";
+
+import Post from "../components/Post/Post";
+
 export default function Home() {
   return (
     <div>
@@ -21,7 +24,7 @@ export default function Home() {
       <SubBanner/>
       <BlockSale/>
       <ProductsList />
-      <Post></Post>
+      <Post />
       <Customers/>
       <Footer />
     </div>

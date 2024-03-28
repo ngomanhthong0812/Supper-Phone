@@ -47,19 +47,19 @@ export default function Footer() {
                   <div className=" text-base ">
                       <div className="py-1">Địa chỉ:70 Lữ Gia, Phường 15, Quận 11, Tp.HCM</div>
                       <div className="py-1">Số điện thoại: <span className='hover:text-[#bf1e2e] cursor-pointer'>1900 6750</span></div>
-                      <div className="py-1">Email: <span className='hover:text-[#bf1e2e] cursor-pointer'>support@sapo.vn</span></div>
+                      <div className="py-1">Email: <span className='hover:text-[#bf1e2e] cursor-pointer'>support@supper.vn</span></div>
                   </div>
                 </div>
 
                 <div className="col-span-2 text-[15px]  max-[991px]:col-span-4 max-[991px]:mt-5 max-[768px]:col-span-12">
                   <ul>
-                    <li className='mb-[15px] font-semibold '>{ListChinhSach.tile}</li>
+                    <li className='mb-[15px] font-semibold '>{ListChinhSach.title}</li>
                     {/* <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Chính sách mua hàng</li>
                     <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Chính sách đổi trả</li>
                     <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Chính sách vận chuyển</li>
                     <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Chính sách bảo mật</li>
                     <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Cam kết cửa hàng</li> */}
-                    {ListChinhSach.conten.map(item => 
+                    {ListChinhSach.content.map(item => 
                        <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal max-md:hidden'><a href="#"></a>{item}</li>
                       )}
                   </ul>
@@ -73,8 +73,8 @@ export default function Footer() {
                       <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Hướng dẫn chuyển khoản</li>
                       <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Hướng dẫn trả góp</li>
                       <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal'><a href="#"></a> Hướng dẫn hoàn hàng</li> */}
-                     <li className='mb-[15px] font-semibold'>{ListHuongDan.tile}</li>
-                     {ListHuongDan.conten.map(item => 
+                     <li className='mb-[15px] font-semibold'>{ListHuongDan.title}</li>
+                     {ListHuongDan.content.map(item => 
                        <li className='py-1 hover:text-[#bf1e2e] cursor-pointer leading-normal max-md:hidden'><a href="#"></a>{item}</li>
                       )}
                     </ul>
