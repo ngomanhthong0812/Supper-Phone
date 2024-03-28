@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Link, useLocation } from "react-router-dom";
-
 import { CiSettings } from "react-icons/ci";
 import { IoEyeOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
@@ -57,7 +55,7 @@ export default function ProductCard({
 
       <div className="product-name flex flex-col items-start mt-3">
         <span className="text-[#343a40] hover:text-[#bf1e2e] font-normal h-[49px] ">
-          <Link>{productName}</Link>
+          <a href="#">{productName}</a>
         </span>
       </div>
 

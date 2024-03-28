@@ -5,10 +5,15 @@ import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import Banner from "../components/Banner/Banner";
-import ProductsList from "../components/ProductsList/ProductsList";
 import Customers from "../components/Customers/Customers";
-import Post from "../components/Post/Post";
 import Tabs from "../components/Tabs/Tabs";
+
+import Services from "../components/Services/Services";
+import SubBanner from "../components/SubBanner/SubBanner";
+import BlockSale from "../components/BlockSale/BlockSale";
+
+import Post from "../components/Post/Post";
+
 
 export default function Home() {
   return (
@@ -16,9 +21,14 @@ export default function Home() {
       <Header />
       <Navbar />
       <Banner />
-      <Tabs tabCategory="iphone" />
-      <Post />
-      <Customers />
+      <div className="my_body">
+        <Services />
+        <SubBanner />
+        <BlockSale />
+        <Tabs tabCategory='iphone' />
+        <Post />
+        <Customers />
+      </div>
       <Footer />
     </div>
   );
