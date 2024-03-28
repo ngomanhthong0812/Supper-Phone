@@ -8,7 +8,7 @@ import Banner from "../components/Banner/Banner";
 import ProductsList from "../components/ProductsList/ProductsList";
 import Customers from "../components/Customers/Customers";
 import Post from "../components/Post/Post";
-
+import Tabs from "../components/Tabs/Tabs";
 
 export default function Home() {
   return (
@@ -16,9 +16,9 @@ export default function Home() {
       <Header />
       <Navbar />
       <Banner />
-      <ProductsList />
+      <Tabs tabCategory="iphone" />
       <Post />
-      <Customers/>
+      <Customers />
       <Footer />
     </div>
   );

@@ -36,7 +36,7 @@ const Post = () => {
 
   return (
     <div className="py-[1.5rem]  container_body">
-      <div className='title mb-5 group'>
+      <div className='title mb-3 group'>
         <h2 className='text-[26px] text-center font-bold text-[#333333] group-hover:!text-[#bf1e2e] transition duration-300'>
           <span className="cursor-pointer">TIN TỨC
             <span className='text-[#bf1e2e]'> CÔNG NGHỆ</span></span>

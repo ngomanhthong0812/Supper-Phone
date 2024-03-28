@@ -1,0 +1,31 @@
+.spinner {
+    position: relative;
+    min-height: 64px
+}
+
+.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    border-right-color: transparent;
+    animation: spinner .9s linear infinite;
+    -webkit-animation: spinner .9s ease-in-out infinite
+}
+
+@-webkit-keyframes spinner {
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg)
+    }
+}

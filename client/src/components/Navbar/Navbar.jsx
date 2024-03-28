@@ -26,31 +26,30 @@ export default function Navbar() {
           {NavbarItem.map((item) => (
             <li key={item.id} className="relative container_menu ">
               <Link
-                className={`gravity gap-[3px] px-[16px] py-[8px] cursor-pointer ${
-                  location.pathname === item.link
-                    ? "active_menu_item"
-                    : "menu_item"
-                } `}
+                className={`gravity gap-[3px] px-[16px] py-[8px] cursor-pointer ${location.pathname === item.link
+                  ? "active_menu_item"
+                  : "menu_item"
+                  } `}
                 to={item.link}
               >
                 {item.title}
-                {item.subMenu && <IoIosArrowDown />}
+                {item.children.length !== 0 && <IoIosArrowDown />}
               </Link>
-              {item.subMenu &&
+              {item.children &&
                 (item.title !== "iPhone" ? (
-                  <ul className="absolute subMenu bg-white text-black w-[250px] top-[50px]">
-                    {item.subMenu.map((item) => (
+                  <ul className="absolute subMenu bg-white text-black w-[250px] top-[50px] text-[16px]">
+                    {item.children.map((item) => (
                       <li key={item.id} className="container_menu-children">
                         <Link
                           to={item.link}
                           className="gravity !justify-between px-3 py-2 cursor-pointer hover:underline transition duration-100"
                         >
                           <span>{item.title}</span>
-                          {item.subMenu && <MdNavigateNext />}
+                          {item.grandchildren.length !== 0 && <MdNavigateNext />}
                         </Link>
-                        {item.subMenu && (
+                        {item.grandchildren.length !== 0 && (
                           <ul className="absolute subMenuChildren bg-white text-black w-[250px]">
-                            {item.subMenu.map((item) => (
+                            {item.grandchildren.map((item) => (
                               <li key={item.id}>
                                 <Link
                                   className="gravity !justify-between px-3 py-2 cursor-pointer hover:underline transition duration-100"
@@ -67,22 +66,22 @@ export default function Navbar() {
                   </ul>
                 ) : (
                   <ul className="absolute subMenu flex bg-white text-black w-[1259px] left-[-225px] top-[50px] rounded-b-[3px]">
-                    {item.subMenu.map((item) => (
+                    {item.children.map((item) => (
                       <div key={item.id} className="py-4 w-[25%]">
                         <li className="subMenu_iphone flex justify-start">
                           <Link
                             to={item.link}
-                            className="gravity px-5 pb-2 cursor-pointer hover:underline transition duration-100"
+                            className="gravity uppercase font-medium px-5 pb-2 cursor-pointer hover:underline transition duration-100"
                           >
                             {item.title}
                           </Link>
                         </li>
                         <ul>
-                          {item.subMenu.map((item) => (
+                          {item.grandchildren.map((item) => (
                             <li className="flex justify-start" key={item.id}>
                               <Link
                                 to={item.link}
-                                className="gravity px-5 py-[2px] cursor-pointer text-[#333333] hover:underline transition duration-100"
+                                className="gravity px-5 py-[2px] cursor-pointer text-[#333333] text-[16px] hover:underline transition duration-100"
                               >
                                 {item.title}
                               </Link>
