@@ -8,12 +8,18 @@ import Banner from "../components/Banner/Banner";
 import ProductsList from "../components/ProductsList/ProductsList";
 import Customers from "../components/Customers/Customers";
 import Post from "../components/Post/Post"
+import Services from "../components/Services/Services";
+import SubBanner from "../components/SubBanner/SubBanner";
+import BlockSale from "../components/BlockSale/BlockSale";
 export default function Home() {
   return (
     <div>
       <Header />
       <Navbar />
       <Banner />
+      <Services/>
+      <SubBanner/>
+      <BlockSale/>
       <ProductsList />
       <Post></Post>
       <Customers/>
