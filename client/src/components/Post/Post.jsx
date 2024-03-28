@@ -35,8 +35,8 @@ const Post = () => {
   //   ]);
 
   return (
-    <div className="py-10 px-10 lg:px-40">
-  <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="py-10 px-10">
+  <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
     {ListPost.map((a, index) => (
       <div key={index} className="w-full max-w-[300px] rounded-2xl border-2 shadow-2xl overflow-hidden bg-gray-50">
         <div className="relative overflow-hidden">
