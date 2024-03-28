@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link, useLocation } from "react-router-dom";
+
 import { CiSettings } from "react-icons/ci";
 import { IoEyeOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
@@ -24,7 +26,7 @@ export default function ProductCard({
   };
   return (
     <div
-      className="group bg-white p-[10px] text-left relative rounded-[10px]"
+      className="group bg-white p-[10px] text-left relative rounded-[10px] hover:!shadow-md shadow-[#c9c9c9]"
       style={style}
     >
       {sale && (
@@ -51,7 +53,7 @@ export default function ProductCard({
 
       <div className="product-name flex flex-col items-start mt-3">
         <span className="text-[#343a40] hover:text-[#bf1e2e] font-normal h-[49px] ">
-          <a href="#">{productName}</a>
+          <Link>{productName}</Link>
         </span>
       </div>
 
