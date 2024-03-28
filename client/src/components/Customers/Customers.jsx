@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import CustomerItem from './CustomerItem';
@@ -20,23 +21,15 @@ export default function Customers() {
             </h2>
         </div>
 
-        <Swiper
-            slidesPerView={5}
-            spaceBetween={20}
-            loop={false}
-            scrollbar={{ draggable: true }}
-            modules={[Navigation, Scrollbar]}
-            className='container_body'
-            watchSlidesProgress={true}
-        >
+
+        <div className='container_body grid grid-cols-5 gap-5'>
             {CustomerItem.map((item) => (
-                <SwiperSlide key={item.id}>
-                    <div className='hover:-translate-y-1 hover:shadow-lg transition duration-300'>
-                        <a href="#"><img src={item.img} className='rounded-2xl' alt="" /></a>
-                    </div>
-                </SwiperSlide>
+                <div className='hover:-translate-y-1 hover:shadow-lg transition duration-300 rounded-2xl overflow-hidden'>
+                    <a href="#"><img src={item.img} className='' alt="" /></a>
+                </div>
             ))}
-        </Swiper>
+        </div>
+        
     </div>
   )
 }
