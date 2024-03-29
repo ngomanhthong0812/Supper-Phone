@@ -13,10 +13,10 @@ const getProducts = async () => {
 const handleGetProducts = async (req, res) => {
   try {
     const products = await getProducts();
-    res.json(products);
+    res.status(200).json({ success: true, data: products });
   } catch (error) {
     console.error("Error handling products request:", error);
-    res.status(500).json({ error: "Internal Server Error" });
+    res.status(500).json({ success: false, error: "Internal Server Error" });
   }
 };
 
