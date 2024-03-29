@@ -30,7 +30,7 @@ export default function Tabs({ tabCategory }) {
       setIsLoading(true)
       setTimeout(() => {
         setIsLoading(false)
-      }, 500)
+      }, 700)
       //thêm index vào mảng để xác định đã click
       setClickedItems(prevClickedItems => [...prevClickedItems, toggleState])
     }
