@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import BannerItem from "./BannerItem";
+import ProductsAPI from '../../services/ProductsAPI'
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,6 +14,8 @@ import "./Banner.css";
 import { Pagination, Navigation } from "swiper/modules";
 
 export default function Banner() {
+  const products = ProductsAPI();
+  console.log(products);
   return (
     <>
       <Swiper

@@ -7,7 +7,7 @@ export default function ProductsList({ quantityProduct = ProductsItem.length, is
   const newProductItem = ProductsItem.filter(item => {
     return item.category.some(category => category.name == nameCategory)
   })
-  console.log(newProductItem);
+  // console.log(newProductItem);
   return (
     <div>
       <div className="w-full flex items-center justify-center">
