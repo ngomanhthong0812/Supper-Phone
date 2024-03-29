@@ -14,7 +14,7 @@ import { Navigation, Scrollbar } from 'swiper/modules';
 export default function Customers() {
     return (
         <div className="py-[1.5rem] container_body">
-            <div className='title mb-3 group'>
+            <div className='title mb-4 group'>
                 <h2 className='text-[26px] text-center font-bold text-[#333333] group-hover:!text-[#bf1e2e] transition duration-300'>
                     <span className="cursor-pointer">KHÁCH HÀNG CỦA
                         <span className='text-[#bf1e2e]'> SUPPER</span></span>
