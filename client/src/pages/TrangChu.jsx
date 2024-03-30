@@ -13,6 +13,7 @@ import SubBanner from "../components/SubBanner/SubBanner";
 import BlockSale from "../components/BlockSale/BlockSale";
 
 import Post from "../components/Post/Post";
+import Categories from "../components/Categories/Categories";
 
 
 export default function TrangChu() {
@@ -25,6 +26,7 @@ export default function TrangChu() {
         <Services />
         <SubBanner />
         <BlockSale />
+        <Categories/>
         <Tabs tabCategory='iphone' />
         <Post />
         <Customers />
